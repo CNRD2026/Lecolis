@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title>Le colis</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.ico">
     
+</head>
+<body class="font-serif">
+        <div class="flex justify-center items-center h-full w-full flex-col relative z-10 m-5">
+            <h1 class="text-4xl animate-fadeInDown text-center">Le colis</h1>
+            <p class="animate-fadeInDown text-center">CNRD 2026</p>
+        </div>
+    <div class="flex flex-row-reverse items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform  duration-300 ">
+    <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
+        <img src="./img/journal.webp" alt="image 1" class="w-full h-auto rounded-lg hidden md:block">
+        <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
+    </div>
+    <div class="w-full md:w-1/2 p-8">
+        <h1 class="font-bold text-4xl">Le journal</h1> 
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facere debitis dicta mollitia labore ullam eligendi unde quia blanditiis, aut rerum ipsa soluta maxime assumenda quas qui. Vero, assumenda voluptates.</p>
+        
+    </div>
+    </div>
+        <div class="flex flex-row  items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300 ">
+    <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
+        <img src="./img/carte.webp" alt="image 1" class="w-full h-auto rounded-lg hidden md:block">
+        <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
+    </div>
+    <div class="w-full md:w-1/2 p-8">
+        <h1 class="font-bold text-4xl">La carte de déporté</h1> 
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facere debitis dicta mollitia labore ullam eligendi unde quia blanditiis, aut rerum ipsa soluta maxime assumenda quas qui. Vero, assumenda voluptates.</p>
+        
+    </div>
+    </div>
+        <div class="flex flex-row-reverse items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300 ">
+        <div class="w-1/2 px-3 flex items-center justify-center flex-col">
+            <div class="w-full relative">
+                <video 
+                    class="w-full h-auto rounded-lg"
+                    controls
+                >
+                    <source src="./img/video.webm" type="video/webm">
+                    Votre navigateur ne supporte pas la lecture vidéo.
+                </video>
+            </div>
+        </div>
+    <div class="w-full md:w-1/2 p-8">
+        <h1 class="font-bold text-4xl">Le chant des partisans</h1> 
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facere debitis dicta mollitia labore ullam eligendi unde quia blanditiis, aut rerum ipsa soluta maxime assumenda quas qui. Vero, assumenda voluptates.</p>
+        
+    </div>
+    </div>
 </body>
+<footer>
+    <div class="text-center p-4">
+        &copy; 2025. Le colis
+    </div>
+</footer>
 </html>
