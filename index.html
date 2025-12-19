@@ -9,11 +9,26 @@
     <link rel="icon" href="./favicon.ico">
     
 </head>
+
+
 <body class="font-serif">
-        <div class="flex justify-center items-center flex-col m-5">
-            <h1 class="text-4xl animate-fadeInDown text-center">Le colis</h1>
-            <p class="animate-fadeInDown text-center">CNRD 2026</p>
-        </div>
+    <header class="h-screen">
+    <div class="relative w-full h-full bg-cover bg-center" 
+        style="background-image: url('./img/background.webp')">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
+
+
+    <!-- Contenu -->
+    <div class="flex justify-center items-center h-full w-full flex-col relative z-10">
+        <h1 class="text-6xl text-zinc-50 animate-fadeInDown text-shadow-2xl">LE COLIS</h1>
+        <p class="text-zinc-50 animate-fadeInDown text-center">CNRD 2026</p>
+
+    </div>
+    </div>
+    </header>
+    <a href="./journal.html">
     <div class="flex flex-col-reverse md:flex-row-reverse items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform  duration-300 ">
     <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
         <img src="./img/journal.webp" alt="image 1" class="w-full h-auto rounded-lg md:block">
@@ -25,9 +40,10 @@
         
     </div>
     </div>
+    </a>
         <div class="flex flex-col-reverse md:flex-row items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300 ">
     <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
-        <img src="./img/carte.webp" alt="image 1" class="w-full h-auto rounded-lgmd:block">
+        <img src="./img/carte.webp" alt="image 1" class="w-full h-auto rounded-lg md:block">
         <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
     </div>
     <div class="w-full md:w-1/2 p-8">
@@ -36,21 +52,26 @@
         
     </div>
     </div>
-    <div class="flex flex-col-reverse md:flex-row-reverse items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300">
+    <div class="flex flex-col-reverse md:flex-row-reverse items-center m-5 border border-zinc-300 rounded-xl p-5 bg-zinc-100 shadow-lg hover:scale-[1.02] transition-transform duration-300">
 
-        <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
-            <video 
-                class="w-full aspect-video object-cover rounded-lg"
-                controls
-            >
-                <source src="./img/video.webm" type="video/webm">
-                Votre navigateur ne supporte pas la lecture vidéo.
-            </video>
+        <!-- Vidéo -->
+        <div class="w-full md:w-1/2 px-3 flex justify-center">
+            <div class="relative w-full pb-[56.25%]">
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/OV0KkYUa6iA"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
 
+        <!-- Texte -->
         <div class="w-full md:w-1/2 p-8">
-            <h1 class="font-bold text-4xl">Le chant des partisans</h1> 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, iure numquam natus porro magnam nobis. Odit deserunt reprehenderit autem ex eum rem nam deleniti adipisci inventore. Ipsa necessitatibus nisi harum.</p>
+            <h1 class="font-bold text-4xl">Dvorak</h1>
+            <p class="text-zinc-700 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure numquam natus porro magnam nobis. Odit deserunt reprehenderit autem ex eum rem nam deleniti adipisci inventore. Ipsa necessitatibus nisi harum.
+            </p>
         </div>
 
     </div>
