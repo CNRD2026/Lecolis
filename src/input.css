@@ -13,6 +13,13 @@
     from { opacity: 0; transform: translateX(12px); }
     to { opacity: 1; transform: translateX(0); }
 }
+@layer utilities {
+    #img-full:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
 .animate-fadeInDown { animation: fadeInDown .7s ease both; }
 .animate-fadeInLeft { animation: fadeInLeft .7s ease both; }
 .animate-fadeInRight { animation: fadeInRight .7s ease both; }
