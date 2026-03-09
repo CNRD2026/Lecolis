@@ -1,109 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Le colis</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" href="./favicon.ico">
-</head>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" />
+  </head>
 
-
-<body class="font-serif">
+  <body class="font-serif">
     <header class="h-screen">
-    <div class="relative w-full h-full bg-cover bg-center" 
-        style="background-image: url('./img/background.webp')">
+      <div class="relative w-full h-full bg-cover bg-center" style="background-image: url('./img/background.webp')">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
 
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
-
-
-    <!-- Contenu -->
-    <div class="flex justify-center items-center h-full w-full flex-col relative z-10">
-        <h1 class="text-6xl text-zinc-300 animate-fadeInDown text-shadow-2xl">LE COLIS</h1>
-        <p class="text-zinc-300 animate-fadeInDown text-center">CNRD 2026</p>
-        <p class="text-xl text-center text-zinc-300 italic mt-5 animate-fadeInDown ">“ La fin de la Shoah et de l’univers concentrationnaire nazi.<br>Survivre, témoigner, juger (1944-1948) „</p>
-    </div>
-    </div>
+        <!-- Contenu -->
+        <div class="flex justify-center items-center h-full w-full flex-col relative z-10">
+          <h1 class="text-6xl text-zinc-300 animate-fadeInDown text-shadow-2xl">LE COLIS</h1>
+          <p class="text-zinc-300 animate-fadeInDown text-center">CNRD 2026</p>
+          <p class="text-xl text-center text-zinc-300 italic mt-5 animate-fadeInDown">
+            “ La fin de la Shoah et de l’univers concentrationnaire nazi.
+            <br />
+            Survivre, témoigner, juger (1944-1948) „
+          </p>
+        </div>
+      </div>
     </header>
     <span id="objets"></span>
-    <div class="flex flex-col md:flex-row-reverse items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform  duration-300 ">
-    <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
-        <img src="./img/journal.webp" alt="image 1" class="w-full h-auto rounded-lg md:block">
+    <div
+      class="flex flex-col md:flex-row-reverse items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300">
+      <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
+        <img src="./img/famille.jpg" alt="image 1" class="w-full h-auto rounded-lg md:block" />
         <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
-    </div>
-    <div class="w-full md:w-1/2 p-8">
-        <h1 class="font-bold text-4xl">Le journal</h1> 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facere debitis dicta mollitia labore ullam eligendi unde quia blanditiis, aut rerum ipsa soluta maxime assumenda quas qui. Vero, assumenda voluptates.</p>
-        <a href="./journal.html"
-        class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5
-                hover:bg-zinc-300">
-        En savoir plus
-        <span class="text-lg">→</span>
+      </div>
+      <div class="w-full md:w-1/2 p-8">
+        <h1 class="font-bold text-4xl">Une famille juive à Lens</h1>
+        <p>
+          Fuyant les persécutions nazies, la famille thau quitte Berlin juste avant la déclaration de guerre et
+          s'installe à Lens. La famille compte 4 personnes, les parents, propriétaires d'un commerce de meubles à Berlin
+          et 2 filles, Margot et Frieda, nées en 1923.
+        </p>
+        <a
+          href="./famille.html"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5 hover:bg-zinc-300">
+          En savoir plus
+          <span class="text-lg">→</span>
         </a>
-
+      </div>
     </div>
-    </div>
-    <div class="flex flex-col md:flex-row items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform  duration-300 ">
-    <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
-        <img src="./img/IMG_3223.jpg" alt="image 1" class="w-full h-auto rounded-lg md:block">
+    <div
+      class="flex flex-col md:flex-row items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300">
+      <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
+        <img src="./img/carte_postale.webp" alt="image 1" class="w-full h-auto rounded-lg md:block" />
         <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
+      </div>
+      <div class="w-full md:w-1/2 p-8">
+        <h1 class="font-bold text-4xl">La carte postale</h1>
+        <p>
+          Le 11 septembre 1942, Frieda et ses parents sont arrêtés à Lens, ils sont emmenés à la gare de lille five et
+          rejoignent les juifs du Nord-Pas-de-Calais arrêtés ce jour-là. Des sauvetages ont lieu mais la famille Thau
+          n'a pas cette chance. Au moment du départ, le père écrit à sa fille, Margot, restée à Lille pour ses études,
+          une carte postale. Un cheminot la retrouve et la poste.
+        </p>
+        <a
+          href="./carte_postale.html"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5 hover:bg-zinc-300">
+          En savoir plus
+          <span class="text-lg">→</span>
+        </a>
+      </div>
     </div>
-    <div class="w-full md:w-1/2 p-8">
-        <h1 class="font-bold text-4xl">La carte</h1> 
+    <div
+      class="flex flex-col md:flex-row-reverse items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300">
+      <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
+        <img src="./img/robe.webp" alt="image 1" class="w-full h-auto rounded-lg md:block" />
+        <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
+      </div>
+      <div class="w-full md:w-1/2 p-8">
+        <h1 class="font-bold text-4xl">2 ans et demi dans les camps (robe)</h1>
+        <p>De septembre 1942 à mai 1945, Frieda survit dans les camps, elle reconnait avoir eu une chance inouïe.</p>
+        <a
+          href="./robe.html"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5 hover:bg-zinc-300">
+          En savoir plus
+          <span class="text-lg">→</span>
+        </a>
+      </div>
+    </div>
+    <div
+      class="flex flex-col md:flex-row items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300">
+      <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
+        <img src="./img/carte.webp" alt="image 1" class="w-full h-auto rounded-lg md:block" />
+        <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
+      </div>
+      <div class="w-full md:w-1/2 p-8">
+        <h1 class="font-bold text-4xl">La carte de déportée</h1>
+        <p>
+          Frieda est rapatriée par la Hollande et la Belgique, ils arrivent de nuit à Lille, elle reçoit une indemnité
+          de 2000 francs et une carte de déportée.
+        </p>
+        <a
+          href="./deporte.html"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5 hover:bg-zinc-300">
+          En savoir plus
+          <span class="text-lg">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col md:flex-row-reverse items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300">
+      <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
+        <img src="./img/IMG_3223.jpg" alt="image 1" class="w-full h-auto rounded-lg md:block" />
+        <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
+      </div>
+      <div class="w-full md:w-1/2 p-8">
+        <h1 class="font-bold text-4xl">La carte</h1>
         <p>Au cours de sa déportation, Frieda Thau a parcouru de nombreux kilomètres au sein du Reich...</p>
-        <a href="./carte.html"
-        class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5
-                hover:bg-zinc-300">
-        Voir son parcours
-        <span class="text-lg">→</span>
+        <a
+          href="./carte.html"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5 hover:bg-zinc-300">
+          Voir son parcours
+          <span class="text-lg">→</span>
         </a>
-
+      </div>
     </div>
+    <div
+      class="flex flex-col md:flex-row items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300">
+      <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
+        <img src="./img/journal.webp" alt="image 1" class="w-full h-auto rounded-lg md:block" />
+        <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
+      </div>
+      <div class="w-full md:w-1/2 p-8">
+        <h1 class="font-bold text-4xl">Le journal</h1>
+        <p>
+          Dès Novembre 1945 à octobre 1946, se déroule le procès de Nuremberg qui juge les dignitaires nazis. Les
+          procureurs, dont l’américain Robert Jackson, retiennent 4 chefs d’accusations contre les inculpés : crimes de
+          guerre, complots, crimes contre l’humanité (nouvelle catégorie juridique), crime contre la paix.
+        </p>
+        <a
+          href="./journal.html"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5 hover:bg-zinc-300">
+          En savoir plus
+          <span class="text-lg">→</span>
+        </a>
+      </div>
     </div>
 
-    <div class="flex flex-col md:flex-row-reverse items-center m-5 border-zinc-300 border rounded-xl py-5 px-5 bg-zinc-100 shadow-lg hover:scale-102 transition-transform duration-300 ">
-        <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
-            <img src="./img/carte.webp" alt="image 1" class="w-full h-auto rounded-lg md:block">
-            <!-- <img src="src/img/image_mobile3.webp" class="w-full h-auto rounded-lg block md:hidden" alt="Image 1"> -->
-        </div>
-        <div class="w-full md:w-1/2 p-8">
-            <h1 class="font-bold text-4xl">La carte de déporté</h1> 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facere debitis dicta mollitia labore ullam eligendi unde quia blanditiis, aut rerum ipsa soluta maxime assumenda quas qui. Vero, assumenda voluptates.</p>
-            <a href="./deporte.html" class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5 hover:bg-zinc-300">En savoir plus<span class="text-lg">→</span></a>
-        </div>
-    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const videos = document.querySelectorAll('video.lazy-video');
 
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const videos = document.querySelectorAll("video.lazy-video");
-
-    const lazyLoad = (video) => {
-        const source = video.querySelector("source");
-        if (source && source.dataset.src) {
+        const lazyLoad = (video) => {
+          const source = video.querySelector('source');
+          if (source && source.dataset.src) {
             source.src = source.dataset.src;
             video.load();
-        }
-    };
+          }
+        };
 
-    const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                lazyLoad(entry.target);
-                obs.unobserve(entry.target);
+              lazyLoad(entry.target);
+              obs.unobserve(entry.target);
             }
+          });
         });
-    });
 
-    videos.forEach(video => observer.observe(video));
-});
-</script>
-</body>
-<footer>
-    <div class="text-center p-4">
-        &copy; 2025. Le colis
-    </div>
-</footer>
+        videos.forEach((video) => observer.observe(video));
+      });
+    </script>
+  </body>
+  <footer>
+    <div class="text-center p-4">&copy; 2025. Le colis</div>
+  </footer>
 </html>

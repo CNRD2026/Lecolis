@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Le colis - Le journal</title>
+    <title>Le colis - Une famille juive à Lens</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="./favicon.ico" />
   </head>
@@ -15,7 +15,9 @@
         <div class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
 
         <div class="flex justify-center items-center h-full w-full flex-col relative z-10 px-4 text-center">
-          <h1 class="text-4xl sm:text-5xl md:text-6xl text-zinc-300 animate-fadeInDown text-shadow-2xl">LE JOURNAL</h1>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl text-zinc-300 animate-fadeInDown text-shadow-2xl">
+            UNE FAMILLE JUIVE À LENS
+          </h1>
           <p class="text-lg sm:text-xl text-zinc-300 italic mt-5 animate-fadeInDown">
             “ Une citation choc de Frieda Thau dans son interview par l'INA „
           </p>
@@ -24,24 +26,28 @@
     </header>
 
     <main class="mx-10 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-60 my-10">
-      <h1 class="text-3xl sm:text-4xl md:text-5xl mb-6">Le journal</h1>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl mb-6">Une famille juive à Lens</h1>
 
       <p class="leading-relaxed text-justify">
         <strong>Description :</strong>
         <br />
-        Dès Novembre 1945 à octobre 1946, se déroule le procès de Nuremberg qui juge les dignitaires nazis. Les
-        procureurs, dont l’américain Robert Jackson, retiennent 4 chefs d’accusations contre les inculpés : crimes de
-        guerre, complots, crimes contre l’humanité (nouvelle catégorie juridique), crime contre la paix.
+        Frieda Geldwerth, de son nom de jeune fille Thau, est née à Berlin en 1923, de parents Juifs polonais. Ses
+        parents vivent assez aisément d'un commerce de meubles. Ils parlent couramment l'allemand et semblent
+        parfaitement intégrés, ce qui ne les empêche pas de voir, à partir de 1933, leurs fréquentations se restreindre
+        à la seule communauté juive. En octobre 1938, le père échappe à une expulsion qui vise les Juifs polonais. Après
+        la Nuit de Cristal, en novembre 1938, au cours de laquelle le magasin familial est détruit, Frieda et sa sœur
+        aînée partent pour la France, où vit depuis les années 1910, une partie de leur famille paternelle. Elles sont
+        rejointes en août 1939 par leurs parents. Installés à Lens, Frieda et ses parents vivent paisiblement tandis que
+        sa sœur vit chez son oncle, à Lille pour ses études.
       </p>
 
       <!-- Image cliquable -->
       <img
         id="open-modal"
         class="rounded-2xl my-10 w-full max-w-3xl mx-auto cursor-zoom-in"
-        src="./img/journal.webp"
+        src="./img/famille.jpg"
         alt="" />
 
-      <!-- Modale -->
       <!-- Modale -->
       <div
         id="modal"
@@ -55,7 +61,7 @@
 
         <!-- Contenu de la modale -->
         <div class="relative max-w-[90vw] max-h-[80vh] flex items-center justify-center">
-          <img src="./img/journal.webp" class="w-auto h-auto max-w-[85vw] max-h-[80vh] rounded-xl shadow-xl" />
+          <img src="./img/famille.jpg" class="w-auto h-auto max-w-[85vw] max-h-[80vh] rounded-xl shadow-xl" />
         </div>
       </div>
     </main>
@@ -64,7 +70,6 @@
       <div class="text-center p-4">&copy; 2025. Le colis</div>
     </footer>
 
-    <!-- Script modale -->
     <!-- Script modale -->
     <script>
       const modal = document.getElementById('modal');
