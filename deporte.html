@@ -1,49 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Le colis - La carte de déportée</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" href="./favicon.ico">
-</head>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" />
+  </head>
 
-<body class="font-serif">
-
-<header class="h-screen">
-    <div class="relative w-full h-full bg-cover bg-center"
-         style="background-image: url('./img/background.webp')">
-
+  <body class="font-serif">
+    <header class="h-screen">
+      <div class="relative w-full h-full bg-cover bg-center" style="background-image: url('./img/background.webp')">
         <div class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
 
         <div class="flex justify-center items-center h-full w-full flex-col relative z-10 px-4 text-center">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl text-zinc-300 animate-fadeInDown text-shadow-2xl">
-                LA CARTE DE DEPORTEE
-            </h1>
-            <p class="text-lg sm:text-xl text-zinc-300 italic mt-5 animate-fadeInDown">
-                “ Une citation choc de Frieda Thau dans son interview par l'INA „
-            </p>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl text-zinc-300 animate-fadeInDown text-shadow-2xl">
+            LA CARTE DE DEPORTEE
+          </h1>
+          <p class="text-lg sm:text-xl text-zinc-300 italic mt-5 animate-fadeInDown md:px-20">
+            “Et puis, aujourd'hui, je le dis à tout le monde, qui veut entendre et qui ne veut pas, et à n'importe
+            quelle occasion. C'est plus fort que moi. « Vous savez, moi, je suis une ancienne déportée »”
+          </p>
         </div>
+      </div>
+    </header>
+    <div class="fixed top-4 left-4 z-50">
+      <a href="./index.html" class="bg-black/50 text-white px-2 py-1 rounded hover:bg-black/70 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ffffff">
+          <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+        </svg>
+        revenir à la liste
+      </a>
     </div>
-</header>
 
-<main class="mx-10 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-60 my-10">
-    <h1 class="text-3xl sm:text-4xl md:text-5xl mb-6">
-        La carte de déportée
-    </h1>
+    <main class="mx-10 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-60 my-10">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl mb-6">La carte de déportée</h1>
 
-    <p class="leading-relaxed text-justify">
-        <strong>Description :</strong><br>
-Frieda est rapatriée par la Hollande et la Belgique, ils arrivent de nuit à Lille, elle reçoit une indemnité de 2000 francs et une carte de déportée.
-    </p>
+      <p class="leading-relaxed text-justify">
+        <strong>Description :</strong>
+        <br />
+        Frieda est rapatriée par la Hollande et la Belgique, ils arrivent de nuit à Lille, elle reçoit une indemnité de
+        2000 francs et une carte de déportée. Une fois rentrée en train elle est hébergée par son oncle, qui, imaginant
+        son douloureux passé, reste à son chevet. C’est pendant cette période que Frieda raconte pour la première fois
+        son histoire. Ce sera la seule fois qu’elle en parlera avant longtemps. Il lui fallut plusieurs années pour
+        raconter son histoire une nouvelle fois. Là, elle prit conscience de l'importance du témoignage et en parla à
+        tous.
+      </p>
 
-    <!-- Image cliquable -->
-    <img id="open-modal"
-         class="rounded-2xl my-10 w-full max-w-3xl mx-auto cursor-zoom-in"
-         src="./img/carte.webp" alt="">
+      <!-- Image cliquable -->
+      <img
+        id="open-modal"
+        class="rounded-2xl my-10 w-full max-w-3xl mx-auto cursor-zoom-in"
+        src="./img/carte.jpeg"
+        alt="" />
 
-    <!-- Modale -->
+      <!-- Modale -->
       <div
         id="modal"
         class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
@@ -56,22 +68,28 @@ Frieda est rapatriée par la Hollande et la Belgique, ils arrivent de nuit à Li
 
         <!-- Contenu de la modale -->
         <div class="relative max-w-[90vw] max-h-[80vh] flex items-center justify-center">
-          <img src="./img/carte.webp" class="w-auto h-auto max-w-[85vw] max-h-[80vh] rounded-xl shadow-xl" />
+          <img src="./img/carte.jpeg" class="w-auto h-auto max-w-[85vw] max-h-[80vh] rounded-xl shadow-xl" />
         </div>
       </div>
-<video controls class="rounded-2xl my-10 w-full max-w-3xl mx-auto">
+      <video controls class="rounded-2xl my-10 w-full max-w-3xl mx-auto">
         <source src="./img/deportee.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-</main>
+      <div class="justify-center flex">
+        <a
+          href="./index.html"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 font-semibold rounded-lg mt-5 hover:bg-zinc-300">
+          Voir la liste des objets
+          <span class="text-lg">→</span>
+        </a>
+      </div>
+    </main>
 
-<footer>
-    <div class="text-center p-4">
-        &copy; 2025. Le colis
-    </div>
-</footer>
+    <footer>
+      <div class="text-center p-4">&copy; 2025 - 2026. Le colis</div>
+    </footer>
 
-<!-- Script modale -->
+    <!-- Script modale -->
     <script>
       const modal = document.getElementById('modal');
       const openBtn = document.getElementById('open-modal');
@@ -98,6 +116,5 @@ Frieda est rapatriée par la Hollande et la Belgique, ils arrivent de nuit à Li
         }
       });
     </script>
-
-</body>
+  </body>
 </html>
