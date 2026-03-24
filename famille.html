@@ -11,7 +11,7 @@
 
   <body class="font-serif">
     <header class="h-screen">
-      <div class="relative w-full h-full bg-cover bg-center" style="background-image: url('./img/background.webp')">
+      <div class="relative w-full h-full bg-cover bg-center" style="background-image: url('./img/background.jpeg')">
         <div class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
 
         <div class="flex justify-center items-center h-full w-full flex-col relative z-10 px-4 text-center">
@@ -19,7 +19,8 @@
             UNE FAMILLE JUIVE À LENS
           </h1>
           <p class="text-lg sm:text-xl text-zinc-300 italic mt-5 animate-fadeInDown md:px-20">
-            “Après, c'était la déclaration des guerres, et voilà, et puis mes parents sont venus, et bon, on s'était installés à Lens.”
+            “Après, c'était la déclaration des guerres, et voilà, et puis mes parents sont venus, et bon, on s'était
+            installés à Lens.”
           </p>
         </div>
       </div>
@@ -52,25 +53,41 @@
 
       <!-- Image cliquable -->
       <img
-        id="open-modal"
-        class="rounded-2xl my-10 w-full max-w-3xl mx-auto cursor-zoom-in"
+        class="open-modal rounded-2xl my-10 w-full max-w-3xl mx-auto cursor-zoom-in"
         src="./img/famille.jpg"
         alt="" />
 
       <!-- Modale -->
       <div
-        id="modal"
-        class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+        class="modal fixed inset-0 z-50 bg-black/80 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
         <!-- Bouton de fermeture en haut à droite de l’écran -->
         <button
-          id="close-modal"
-          class="fixed top-4 right-4 bg-white text-black rounded-full w-9 h-9 flex items-center justify-center shadow-lg z-50">
+          class="close-modal fixed top-4 right-4 bg-white text-black rounded-full w-9 h-9 flex items-center justify-center shadow-lg z-50">
           ✕
         </button>
 
         <!-- Contenu de la modale -->
         <div class="relative max-w-[90vw] max-h-[80vh] flex items-center justify-center">
           <img src="./img/famille.jpg" class="w-auto h-auto max-w-[85vw] max-h-[80vh] rounded-xl shadow-xl" />
+        </div>
+      </div>
+      <img
+        class="open-modal rounded-2xl my-10 w-full max-w-3xl mx-auto cursor-zoom-in"
+        src="./img/carte_de france.jpeg"
+        alt="" />
+
+      <!-- Modale -->
+      <div
+        class="modal fixed inset-0 z-50 bg-black/80 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+        <!-- Bouton de fermeture en haut à droite de l’écran -->
+        <button
+          class="close-modal fixed top-4 right-4 bg-white text-black rounded-full w-9 h-9 flex items-center justify-center shadow-lg z-50">
+          ✕
+        </button>
+
+        <!-- Contenu de la modale -->
+        <div class="relative max-w-[90vw] max-h-[80vh] flex items-center justify-center">
+          <img src="./img/carte_de france.jpeg" class="w-auto h-auto max-w-[85vw] max-h-[80vh] rounded-xl shadow-xl" />
         </div>
       </div>
       <!-- Video -->
@@ -94,29 +111,41 @@
 
     <!-- Script modale -->
     <script>
-      const modal = document.getElementById('modal');
-      const openBtn = document.getElementById('open-modal');
-      const closeBtn = document.getElementById('close-modal');
-      const body = document.body;
-
-      function openModal() {
+      function openModal(modal) {
         modal.classList.remove('opacity-0', 'pointer-events-none');
-        body.classList.add('overflow-hidden'); // désactive le scroll
+        document.body.classList.add('overflow-hidden'); // désactive le scroll
       }
 
-      function closeModal() {
+      function closeModal(modal) {
         modal.classList.add('opacity-0', 'pointer-events-none');
-        body.classList.remove('overflow-hidden'); // réactive le scroll
+        document.body.classList.remove('overflow-hidden'); // réactive le scroll
       }
 
-      openBtn.addEventListener('click', openModal);
-      closeBtn.addEventListener('click', closeModal);
+      // Gestion des boutons d'ouverture
+      document.querySelectorAll('.open-modal').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const modal = btn.nextElementSibling;
+          if (modal && modal.classList.contains('modal')) {
+            openModal(modal);
+          }
+        });
+      });
+
+      // Gestion des boutons de fermeture
+      document.querySelectorAll('.close-modal').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const modal = btn.closest('.modal');
+          closeModal(modal);
+        });
+      });
 
       // Fermeture en cliquant sur le fond
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          closeModal();
-        }
+      document.querySelectorAll('.modal').forEach((modal) => {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            closeModal(modal);
+          }
+        });
       });
     </script>
   </body>
