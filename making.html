@@ -8,174 +8,179 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="./favicon.ico" />
   </head>
-  <body class="font-serif">
+  <body class="font-serif bg-gray-100">
     <h1 class="text-2xl text-center m-2">Le Making off</h1>
-<body class="bg-gray-100">
 
-<div class="max-w-6xl mx-auto p-4">
-            <div class="fixed top-4 left-4 z-50">
-      <a href="./index.html" class="bg-black/50 backdrop-blur text-white px-2 py-1 rounded hover:bg-black/70 flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ffffff">
-          <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
-        </svg>
-        revenir à l'acceuil
-      </a>
-    </div>
-  <h1 class="text-2xl font-bold mb-6 text-center">Galerie Photos</h1>
+    <div class="max-w-6xl mx-auto p-4">
+      <div class="fixed top-4 left-4 z-50">
+        <a href="./index.html" class="bg-black/50 backdrop-blur text-white px-2 py-1 rounded hover:bg-black/70 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ffffff">
+            <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+          </svg>
+          revenir à l'accueil
+        </a>
+      </div>
 
-  <!-- GRID -->
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <h1 class="text-2xl font-bold mb-6 text-center">Galerie Photos</h1>
 
-    <!-- IMAGE ITEM -->
-    <!-- Répète ce bloc pour chaque image -->
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20251128_111831263.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-Brainstorming pour le choix du projet
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260123_111143502.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-Sortie pour voir le film "Sauvons les enfants"
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260211_183132468.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-Sortie pour voir le film "Lili"
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260309_141206177.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-     Fabrication de la revue de presse par Iolas et Thomas
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260309_141209334.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-    Fabrication de la revue de presse par Iolas et Thomas
+      <!-- GRID -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
 
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260309_141338504.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20251128_111831263.jpg', 'Brainstorming pour le choix du projet')">
+          <img src="./img/making_off/PXL_20251128_111831263.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Brainstorming pour le choix du projet</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260123_111143502.jpg', 'Sortie pour voir le film « Sauvons les enfants »')">
+          <img src="./img/making_off/PXL_20260123_111143502.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Sortie pour voir le film « Sauvons les enfants »</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260211_183132468.jpg', 'Sortie pour voir le film « Lili »')">
+          <img src="./img/making_off/PXL_20260211_183132468.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Sortie pour voir le film « Lili »</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260309_141206177.jpg', 'Fabrication de la revue de presse par Iolas et Thomas')">
+          <img src="./img/making_off/PXL_20260309_141206177.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Fabrication de la revue de presse par Iolas et Thomas</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260309_141209334.jpg', 'Fabrication de la revue de presse par Iolas et Thomas')">
+          <img src="./img/making_off/PXL_20260309_141209334.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Fabrication de la revue de presse par Iolas et Thomas</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260309_141338504.jpg', 'Réalisation du carnet de la revue de presse par Lucie A.')">
+          <img src="./img/making_off/PXL_20260309_141338504.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Réalisation du carnet de la revue de presse par Lucie A.</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260320_103907837.jpg', 'Tournage du film « Le Colis de mamie » avec Malo, Iolas, Cyane, Lucie M. et Inès')">
+          <img src="./img/making_off/PXL_20260320_103907837.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Tournage du film « Le Colis de mamie » avec Malo, Iolas, Cyane, Lucie M. et Inès</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260320_114550421.jpg', 'Discussion sur la mise en page du site proposée par Malo')">
+          <img src="./img/making_off/PXL_20260320_114550421.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Discussion sur la mise en page du site proposée par Malo</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260320_125015032.jpg', 'Coiffure et maquillage par Cyane et Anaïs')">
+          <img src="./img/making_off/PXL_20260320_125015032.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Coiffure et maquillage par Cyane et Anaïs</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260323_085508264.jpg', 'Tournage du « Retour de Frieda » au restaurant Crocodile')">
+          <img src="./img/making_off/PXL_20260323_085508264.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Tournage du « Retour de Frieda » au restaurant Crocodile</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260323_092255567.jpg', 'Tournage du « Retour de Frieda » au restaurant Crocodile')">
+          <img src="./img/making_off/PXL_20260323_092255567.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Tournage du « Retour de Frieda » au restaurant Crocodile</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260323_093919619.jpg', 'L\'équipe du tournage devant le restaurant Crocodile')">
+          <img src="./img/making_off/PXL_20260323_093919619.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">L'équipe du tournage devant le restaurant Crocodile</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260323_163006091.jpg', 'Codage du site par Malo')">
+          <img src="./img/making_off/PXL_20260323_163006091.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Codage du site par Malo</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260324_132611857.jpg', 'Épreuve écrite du concours (ça travaille dur !)')">
+          <img src="./img/making_off/PXL_20260324_132611857.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Épreuve écrite du concours (ça travaille dur !)</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260324_145432715.jpg', 'Couture de la robe par Anaïs')">
+          <img src="./img/making_off/PXL_20260324_145432715.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Couture de la robe par Anaïs</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260324_154209042.jpg', 'Tournage du film « Le Retour de Frieda » au collège')">
+          <img src="./img/making_off/PXL_20260324_154209042.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Tournage du film « Le Retour de Frieda » au collège</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260324_160420896.jpg', 'Confection de l\'étoile par Anaïs')">
+          <img src="./img/making_off/PXL_20260324_160420896.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Confection de l'étoile par Anaïs</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260325_101907048.jpg', 'Développement du site par Malo')">
+          <img src="./img/making_off/PXL_20260325_101907048.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Développement du site par Malo</p>
+        </div>
+
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/PXL_20260325_113038893.jpg', 'Tournage du film « Le Colis de mamie » en salle des profs par Lucie M.')">
+          <img src="./img/making_off/PXL_20260325_113038893.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Tournage du film « Le Colis de mamie » en salle des profs par Lucie M.</p>
+        </div>
+        <div class="overflow-hidden rounded-xl shadow cursor-pointer group bg-white" onclick="openLightbox('./img/making_off/valerio.jpg', 'Calligraphie à la plume par Valerio')">
+          <img src="./img/making_off/valerio.jpg"
+               class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300">
+          <p class="text-sm text-center text-gray-700 p-2">Calligraphie à la plume par Valerio</p>
+        </div>
+
+      </div>
     </div>
-    Réalisation du carnet de la revue de presse par Lucie A.
 
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260320_103907837.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
+    <!-- LIGHTBOX -->
+    <div id="lightbox"
+         class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50"
+         onclick="closeLightbox()">
+      <div class="flex flex-col items-center max-h-[95vh]" onclick="event.stopPropagation()">
+        <img id="lightbox-img" class="max-h-[80vh] max-w-[90vw] rounded-lg shadow-lg">
+        <p id="lightbox-caption" class="text-white text-center mt-3 text-sm px-4 max-w-xl"></p>
+        <button onclick="closeLightbox()" class="mt-3 text-white/70 hover:text-white text-sm underline">Fermer</button>
+      </div>
     </div>
-    Tournage du film "Le Colis de mamie" avec Malo, Iolas, Cyane, Lucie M. et Inès
 
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260320_114550421.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-    Discussion sur la mise en page du site proposée par Malo
+    <script>
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').textContent = caption || '';
+      document.getElementById('lightbox').classList.remove('hidden');
+      document.getElementById('lightbox').classList.add('flex');
+    }
 
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260320_125015032.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-    Coiffure et maquillage par Cyane et Anaïs
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.add('hidden');
+      document.getElementById('lightbox').classList.remove('flex');
+    }
 
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260323_085508264.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-    Tournage du "Retour de Frieda" au restaurant Crocodile
+    // Fermer avec la touche Échap
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
 
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260323_092255567.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-    Tournage du "Retour de Frieda" au restaurant Crocodile
-
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260323_093919619.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-    L'équipe du tournage devant le restaurant Crocodile
-
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260323_163006091.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-    Codage du site par Malo
-
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260324_132611857.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-    Epreuve écrite du concours (ça travaille dur !)
-
-
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260324_145432715.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-Couture de la robe par Anaïs
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260324_154209042.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-    Tournage du film "Le Retour de Frieda" au collège
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260324_160420896.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-Confection de l'étoile par Anaïs
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260325_101907048.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-Dèveloppement du site par Malo
-    <div class="overflow-hidden rounded-xl shadow cursor-pointer group">
-      <img src="./img/making_off/PXL_20260325_113038893.jpg"
-           class="w-full h-48 object-cover transform group-hover:scale-110 transition duration-300"
-           onclick="openLightbox(this.src)">
-    </div>
-Tournage du film "Le Colis de mamie" en salle des profs par Lucie M.
-  </div>
-</div>
-
-<!-- LIGHTBOX -->
-<div id="lightbox"
-     class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50"
-     onclick="closeLightbox()">
-  <img id="lightbox-img" class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg">
-</div>
-
-<script>
-function openLightbox(src) {
-  document.getElementById('lightbox-img').src = src;
-  document.getElementById('lightbox').classList.remove('hidden');
-  document.getElementById('lightbox').classList.add('flex');
-}
-
-function closeLightbox() {
-  document.getElementById('lightbox').classList.add('hidden');
-  document.getElementById('lightbox').classList.remove('flex');
-}
-</script>
-
-
+    // Fermer en cliquant sur le fond
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
+    });
+    </script>
   </body>
-  </html>
+</html>
